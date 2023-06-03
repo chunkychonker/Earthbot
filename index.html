@@ -10,7 +10,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-	  <a class="navbar-brand" href="index">Discord EarthBot</a>
+	  <a class="navbar-brand" href="index">
+	  	<img src="planet-illustration-of-the-planet-earth-planet-with-t-shirts-and-ode-cartoon-style-free-vector.png" alt="EarthBot Logo" height="50">
+	  	EarthBot
+	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -34,114 +37,81 @@
 <div class="container mt-5">
   <div class="row">
 	  <div class="col-md-6">
-	  	  <div class = "Title">
-			  <h1 class="display-4">Build a community that cares about the environment on discord.</h1>
-			  
+	  	  <div class="title">
+			  <h1 class="display-4">Build a community that cares about the environment on Discord</h1>
 		  </div>
-	      
-	      <button class = "donate-button" href="donate">
-	      	<img class = "donate-img" src = "https://em-content.zobj.net/thumbs/120/microsoft/319/white-heart_1f90d.png">
-	      	Donate Now
-	      </button>
-	      <button class="hyperlink-button" href="link">
-	      	Add to Discord
-	      </button>
+	      <p class="lead">Earth Bot is an informational bot that empowers Discord communities to take action towards a sustainable future. With Earth Bot, you can stay informed about local environmental issues, access environmental data, and find volunteer opportunities.</p>
+	      <div class="button-container">
+		      <a class="donate-button" href="donate">
+		      	<img class="donate-img" src="https://em-content.zobj.net/thumbs/120/microsoft/319/white-heart_1f90d.png" alt="Donate Icon">
+		      	Donate Now
+		      </a>
+		      <a class="hyperlink-button" href="link">
+		      	<img class="add-img" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Ddiscord%2BLogo&psig=AOvVaw2dP4oV7-4EIDaFzIW3JFlI&ust=1685916996184000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKDghLCQqP8CFQAAAAAdAAAAABAJ.png" alt="Add to Discord Icon">
+		      	Add to Discord
+		      </a>
+	      </div>
 	  </div>
-  <div class="video-background">
-	  <div class="video-wrapper">
-	    <iframe
-	      width="560"
-	      height="315"
-	      src="https://www.youtube.com/embed/Faow3SKIzq0?autoplay=1&loop=1&playlist=Faow3SKIzq0&mute=1"
-	      frameborder="0"
-	      allow="autoplay; encrypted-media"
-	      allowfullscreen
-	    ></iframe>
-	  </div>
-  </div>	    
+	</div>
+</div>    
 
-<script>
-</script>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+          <p><strong>Email:</strong> info@earthbot.com</p>
+          <p><strong>Phone:</strong> +1 123-456-7890</p>
+          <p><strong>Address:</strong> 123 Green Street, Earthville, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <style>
-  .donate-button {
+  .navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: linear-gradient(0deg, rgb(23, 24, 30), rgb(23, 24, 30)), linear-gradient(90deg, rgb(177, 116, 255) 0%, rgb(255, 209, 189) 100%), rgb(23, 24, 30); 
+    background-blend-mode: overlay, normal, normal;
+  }
+
+  body {
+    background-color: rgb(51, 0, 51);
+    color: white;
+  }
+
+  h1.display-4 {
+    font-weight: bold;
+    color: rgb(177, 116, 255);
+    margin-bottom: 30px;
+  }
+
+  p.lead {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .donate-button,
+  .hyperlink-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
-    background-color: rgb(255,0,0);
-    border-color: rgb(255,0,0);
     border-radius: 10px;
     height: 70px;
     width: 180px;
     font-size: 20px;
-    font-weight:600;
-    font-family: 
+    font-weight: 600;
   }
-
-  .hyperlink-button {
-  	display: flex;
-  	align-items: center;
-  	text-decoration: none;
-  	color: blueviolet;
-  	background-color: whitesmoke;
-  	border-color: darkgreen;
-  	border-radius: 10px;
-  	height: 70px;
-  	width: 180px;
-    font-size: 20px;
-    font-weight:600;
-    font-family: 
-  }
-
-  .donate-img {
-  	width: 25px; 
-    height: auto; 
-    margin-right: 5px;
-  }
-
- 
-
-  .Title{
-  	color: whitesmoke;
-  	font-weight:600;
-  }
-
-  .video-background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-  }
-
-  .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .navbar.navbar-expand-lg.navbar-light.bg-light {
-  	background: linear-gradient(0deg, rgb(23, 24, 30), rgb(23, 24, 30)), linear-gradient(90deg, rgb(177, 116, 255) 0%, rgb(255, 209, 189) 100%), rgb(23, 24, 30); 
-  	background-blend-mode: overlay, normal, normal;
-  }
-
- 
-
-</style>		  
-
-		  
-
-		    
-
-		  
