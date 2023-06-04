@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EarthBot</title>
-  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png">
+  <link rel="icon" href="http://example.com/favicon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -29,28 +29,69 @@
 			  <li class="nav-item">
 				  <a class="nav-link btn btn-primary" href="features.html">Features</a>
 			  </li>
-		  </ul>
-	  </div>
+			  <li class="nav-item">
+				  <a class="nav-link btn btn-primary" href="donate.html">Donate</a>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link btn btn-primary" href="contact.html">Contact Us</a>
+			  </li>
+		  	<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="languageDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Spanish</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('zh')">Chinese</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-4">About EarthBot</h1>
+        <p class="lead">Earth Bot is an informational bot that gives users info on local environmental issues, their community's environmental data, and volunteer opportunities in their area.</p>
+        <p class="lead">Our goal is to raise awareness about environmental concerns and encourage individuals to take action to protect the planet.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="image-container">
+          <img src="https://static.vecteezy.com/system/resources/previews/021/934/440/non_2x/people-collecting-garbage-on-beach-men-and-women-gathering-plastic-waste-in-trash-bags-volunteers-picking-up-trash-at-seaside-illustration-vector.jpg"
+            alt="Your Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
   </div>
-</nav>
 
-<div class="container mt-5">
-  <div class="row">
-	  <div class="col-md-6">
-		  <h1 class="display-4">About EarthBot</h1>
-	      <p class="lead">Earth Bot is an informational bot that gives users info on local environmental issues, their community's environmental data, and volunteer opportunities in their area. </p>
-	      <p class="lead">Our goal is to raise awareness about environmental concerns and encourage individuals to take action to protect the planet.</p>
-	  </div>
-	  <div class="col-md-6">
-	    <div class="image-container">
-	      <img src="https://static.vecteezy.com/system/resources/previews/021/934/440/non_2x/people-collecting-garbage-on-beach-men-and-women-gathering-plastic-waste-in-trash-bags-volunteers-picking-up-trash-at-seaside-illustration-vector.jpg" alt="Your Image" class="img-fluid">
-	    </div>
-	  </div>
-  </div>
-</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      // English
+      if (language === 'en') {
+        document.querySelector('h1.display-4').textContent = 'About EarthBot';
+        document.querySelector('p.lead').textContent = 'Earth Bot is an informational bot that gives users info on local environmental issues, their community\'s environmental data, and volunteer opportunities in their area.';
+        document.querySelectorAll('p.lead')[1].textContent = 'Together, we can make a difference in protecting our planet!';
+      }
+      // Spanish
+      else if (language === 'es') {
+        document.querySelector('h1.display-4').textContent = 'Sobre EarthBot';
+        document.querySelector('p.lead').textContent = 'Earth Bot es un bot informativo que brinda a los usuarios información sobre problemas ambientales locales, datos ambientales de su comunidad y oportunidades de voluntariado en su área.';
+        document.querySelectorAll('p.lead')[1].textContent = '¡Juntos podemos hacer la diferencia en la protección de nuestro planeta!';
+      }
+      // Chinese
+      else if (language === 'zh') {
+        document.querySelector('h1.display-4').textContent = '关于 EarthBot';
+        document.querySelector('p.lead').textContent = 'EarthBot 是一个信息机器人，为用户提供有关本地环境问题、社区环境数据和当地志愿者机会的信息。';
+        document.querySelectorAll('p.lead')[1].textContent = '让我们共同努力，保护我们的地球！';
+      }
+    }
+  </script>
 
-</body>
 
+</html>
 <style>
 	.navbar.navbar-expand-lg.navbar-light.bg-light {
   	background: linear-gradient(0deg, rgb(23, 24, 30), rgb(23, 24, 30)), linear-gradient(90deg, rgb(177, 116, 255) 0%, rgb(255, 209, 189) 100%), rgb(23, 24, 30); 
@@ -98,22 +139,21 @@
     
   }
 
-  /* Add CSS for the image container */
   .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px; /* Adjust the height as needed */
+    height: 250px; 
     overflow: hidden;
     border-radius: 50%;
   }
-
-  /* Add CSS for the image within the container */
   .image-container img {
     width: auto;
     height: 100%;
     object-fit: cover;
-    margin-bottom: -20px; /* Adjust the negative margin to cut out more from the bottom */
+    margin-bottom: -20px; 
   }
+
 </style>
+</body>
 </html>
