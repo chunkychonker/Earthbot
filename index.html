@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EarthBot</title>
+  <title>GloBot</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png">
 </head>
 <body>
 
@@ -12,7 +13,7 @@
   <div class="container">
     <a class="navbar-brand" href="index.html">
       <img src="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png" alt="EarthBot Logo" height="50">
-      EarthBot
+      GloBot
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -54,13 +55,13 @@
         <div class="title">
         <h1 class="display-4">Build a community that cares about the environment in Discord</h1>
       </div>
-        <p class="lead">Earth Bot is an informational bot that empowers Discord communities to take action towards a sustainable future. With Earth Bot, you can stay informed about local environmental issues, access environmental data, and find volunteer opportunities.</p>
+        <p class="lead">GloBot is an informational bot that empowers Discord communities to take action towards a sustainable future. With GloBot, you can stay informed about local environmental issues, access environmental data, and find volunteer opportunities.</p>
         <div class="button-container">
-          <a class="donate-button" href="donate">
+          <a class="donate-button" href="donate.html">
             <img class="donate-img" src="https://em-content.zobj.net/thumbs/120/microsoft/319/white-heart_1f90d.png" alt="Donate Icon">
             Donate Now
           </a>
-          <a class="hyperlink-button" href="link">
+          <a class="hyperlink-button" href="https://discord.com/api/oauth2/authorize?client_id=1114625121760591872&permissions=8&scope=bot%20applications.commands">
             <img class="add-img" src="https://smallseotools.com/designstudio/images/emoji/social_7.png" alt="Add to Discord Icon">
             Add to Discord
           </a>
@@ -80,7 +81,7 @@
         <br>
         <h3>Contact Information</h3>
         <div class="contact-info">
-          <p><strong>Email:</strong> info@earthbot.com</p>
+          <p><strong>Email:</strong> info@globot.com</p>
           <p><strong>Phone:</strong> +1 123-456-7890</p>
           <p><strong>Address:</strong> 123 Green Street, Earthville, USA</p>
         </div>
@@ -101,7 +102,7 @@
       document.querySelector('.donate-button').textContent = 'Donate Now';
       document.querySelector('.hyperlink-button').textContent = 'Add to Discord';
       document.querySelector('.footer h3').textContent = 'Contact Information';
-      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@globot.com';
       document.querySelector('.contact-info p:nth-child(2)').textContent = 'Phone: +1 123-456-7890';
       document.querySelector('.contact-info p:nth-child(3)').textContent = 'Address: 123 Green Street, Earthville, USA';
     }
@@ -115,7 +116,7 @@
       document.querySelector('.donate-button').textContent = 'Donar ahora';
       document.querySelector('.hyperlink-button').textContent = 'Agregar a Discord';
       document.querySelector('.footer h3').textContent = 'Información de contacto';
-      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@globot.com';
       document.querySelector('.contact-info p:nth-child(2)').textContent = 'Teléfono: +1 123-456-7890';
       document.querySelector('.contact-info p:nth-child(3)').textContent = 'Dirección: 123 Green Street, Earthville, USA';
     }
@@ -129,12 +130,13 @@
       document.querySelector('.donate-button').textContent = '立即捐赠';
       document.querySelector('.hyperlink-button').textContent = '添加到 Discord';
       document.querySelector('.footer h3').textContent = '联系信息';
-      document.querySelector('.contact-info p:nth-child(1)').textContent = '邮箱：info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = '邮箱：info@globot.com';
       document.querySelector('.contact-info p:nth-child(2)').textContent = '电话：+1 123-456-7890';
       document.querySelector('.contact-info p:nth-child(3)').textContent = '地址：123 Green Street, Earthville, USA';
     }
   }
 </script>
+
 
 <style>
   .navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -148,12 +150,12 @@
 
   body {
     background-color: rgb(51, 0, 51);
-    color: white;
+    color: floralwhite;
   }
 
   h1.display-4 {
     font-weight: bold;
-    color: white;
+    color: floralwhite;
     margin-bottom: 30px;
   }
 
@@ -221,12 +223,13 @@
     margin-bottom: 5px;
   }
   
+  
   .navbar-nav .nav-link {
     border-radius: 20px;
     margin-right: 10px;
     padding: 10px 20px;
   }
-
+  
   .navbar-nav .nav-link.btn-primary {
     background-color: rgb(55,142,255);
     border-color: rgb(55,142,255);
@@ -242,8 +245,14 @@
     font-weight: bold;
     font-size: 30px;
   }
-  
-  .dropdown-menu {
+
+  body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/7faa23115720621.6053991a2a4a2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+
+   .dropdown-menu {
     background-color: whitesmoke;
     border-radius: 10px;
   }
@@ -251,6 +260,7 @@
   .dropdown-item {
     color: #000;
   }
+
 </style>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
