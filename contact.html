@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EarthBot</title>
-  <link rel="icon" href="http://example.com/favicon.png">
+  <title>GloBot</title>
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -16,7 +16,7 @@
       <a class="navbar-brand" href="index.html">
         <img src="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png"
           alt="EarthBot Logo" height="50">
-        EarthBot
+        GloBot
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,14 @@
           <li class="nav-item">
             <a class="nav-link btn btn-primary" href="contact.html">Contact Us</a>
           </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Spanish</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('zh')">Chinese</a>
+          </div>
+        </li>
         </ul>
       </div>
     </div>
@@ -59,7 +67,7 @@
           <br>
           <h3>Contact Information</h3>
           <div class="contact-info">
-            <p><strong>Email:</strong> info@earthbot.com</p>
+            <p><strong>Email:</strong> info@globot.com</p>
             <p><strong>Phone:</strong> +1 123-456-7890</p>
             <p><strong>Address:</strong> 123 Green Street, Earthville, USA</p>
           </div>
@@ -164,6 +172,15 @@
     .contact-info p {
       margin-bottom: 5px;
     }
+
+    .dropdown-menu {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  
+  .dropdown-item {
+    color: #000;
+  }
   </style>
 </body>
 
