@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EarthBot</title>
-  <link rel="icon" href="http://example.com/favicon.png">
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -37,10 +37,14 @@
 <div class="container mt-5">
   <div class="row">
 	  <div class="col-md-6">
-		  <h1 class="display-4">About</h1>
-	      <p class="lead">Earth Bot is an informational bot that gives users info on local environmental issues. Earth bot informs people about their community's environmental data and provides them with volunteer opportunities.</p>
-	      <p class="lead">Our mission is to raise awareness about environmental concerns and encourage individuals to take action to protect the planet. Through our bot, we aim to provide easily accessible information to empower people to make environmentally conscious choices.</p>
-	      <p class="lead">Join us in our efforts to create a sustainable future for generations to come.</p>
+		  <h1 class="display-4">About EarthBot</h1>
+	      <p class="lead">Earth Bot is an informational bot that gives users info on local environmental issues, their community's environmental data, and volunteer opportunities in their area. </p>
+	      <p class="lead">Our goal is to raise awareness about environmental concerns and encourage individuals to take action to protect the planet.</p>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="image-container">
+	      <img src="https://static.vecteezy.com/system/resources/previews/021/934/440/non_2x/people-collecting-garbage-on-beach-men-and-women-gathering-plastic-waste-in-trash-bags-volunteers-picking-up-trash-at-seaside-illustration-vector.jpg" alt="Your Image" class="img-fluid">
+	    </div>
 	  </div>
   </div>
 </div>
@@ -56,11 +60,12 @@
 	body {
 		background-color: rgb(51, 0, 51);
 		color: white;
+	
 	}
 
 	h1.display-4 {
 		font-weight: bold;
-		color: rgb(177, 116, 255);
+		color: white;
 		margin-bottom: 30px;
 	}
 
@@ -83,13 +88,32 @@
   }
   
   .navbar-nav .nav-link.btn-primary:hover {
-    background-color: blue;
-    border-color: blue;
+    background-color: #00bfff;
+    border-color: #00bfff;
   }
 
   .navbar-brand {
     font-weight: bold;
     font-size: 30px;
+    
+  }
+
+  /* Add CSS for the image container */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Adjust the height as needed */
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  /* Add CSS for the image within the container */
+  .image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -20px; /* Adjust the negative margin to cut out more from the bottom */
   }
 </style>
 </html>
