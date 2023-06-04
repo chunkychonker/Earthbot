@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarthBot</title>
+  <link rel="icon" href="http://example.com/favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: rgb(51, 0, 51);
+      color: white;
+    }
+
+    .donate-container {
+      max-width: 400px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h1.display-4 {
+      font-weight: bold;
+      color: whitesmoke;
+      margin-bottom: 30px;
+    }
+
+    p.lead {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .donation-form {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ced4da;
+    }
+
+    .thank-you-message {
+      display: none;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+      background: linear-gradient(0deg, rgb(23, 24, 30), rgb(23, 24, 30)),
+        linear-gradient(90deg, rgb(177, 116, 255) 0%, rgb(255, 209, 189) 100%), rgb(23, 24, 30);
+      background-blend-mode: overlay, normal, normal;
+    }
+
+    .navbar-nav .nav-link {
+      border-radius: 20px;
+      margin-right: 10px;
+      padding: 10px 20px;
+    }
+
+    .navbar-nav .nav-link.btn-primary {
+      background-color: rgb(55, 142, 255);
+      border-color: rgb(55, 142, 255);
+      color: white;
+    }
+
+    .navbar-nav .nav-link.btn-primary:hover {
+    background-color: #00bfff;
+    border-color: #00bfff;
+  }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .footer h3 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    direction: rtl; 
+  }
+
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://em-content.zobj.net/thumbs/120/twitter/348/globe-showing-americas_1f30e.png"
+          alt="EarthBot Logo" height="50">
+        EarthBot
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="about_page.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-4">Donate</h1>
+        <div class="donate-container">
+          <div class="donation-form">
+            <div class="form-group">
+              <label for="amount">Amount:</label>
+              <input type="text" id="amount" name="amount" placeholder="Enter the amount to donate">
+            </div>
+            <button id="submit" class="btn btn-primary">Donate</button>
+          </div>
+          <div class="thank-you-message" id="thank-you-message">Thank you for your donation!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const submitButton = document.getElementById("submit");
+      const thankYouMessage = document.getElementById("thank-you-message");
+
+      submitButton.addEventListener("click", function () {
+        thankYouMessage.style.display = "block";
+        setTimeout(function () {
+          thankYouMessage.style.display = "none";
+        }, 3000);
+      });
+    });
+  </script>
+</body>
+
+</html>
