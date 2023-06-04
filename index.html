@@ -28,6 +28,20 @@
         <li class="nav-item">
           <a class="nav-link btn btn-primary" href="features.html">Features</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" href="donate.html">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn btn-primary" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Spanish</a>
+            <a class="dropdown-item" href="#" onclick="changeLanguage('zh')">Chinese</a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -75,6 +89,52 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function changeLanguage(language) {
+    // English
+    if (language === 'en') {
+      document.getElementById('navbarNav').classList.remove('rtl');
+      document.body.classList.remove('rtl');
+      document.querySelector('h1.display-4').textContent = 'Build a community that cares about the environment in Discord';
+      document.querySelector('p.lead').textContent = 'Earth Bot is an informational bot that empowers Discord communities to take action towards a sustainable future. With Earth Bot, you can stay informed about local environmental issues, access environmental data, and find volunteer opportunities.';
+      document.querySelector('.donate-button').textContent = 'Donate Now';
+      document.querySelector('.hyperlink-button').textContent = 'Add to Discord';
+      document.querySelector('.footer h3').textContent = 'Contact Information';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(2)').textContent = 'Phone: +1 123-456-7890';
+      document.querySelector('.contact-info p:nth-child(3)').textContent = 'Address: 123 Green Street, Earthville, USA';
+    }
+    
+    // Spanish
+    if (language === 'es') {
+      document.getElementById('navbarNav').classList.remove('rtl');
+      document.body.classList.remove('rtl');
+      document.querySelector('h1.display-4').textContent = 'Construye una comunidad que se preocupe por el medio ambiente en Discord';
+      document.querySelector('p.lead').textContent = 'Earth Bot es un bot informativo que empodera a las comunidades de Discord para tomar medidas hacia un futuro sostenible. Con Earth Bot, puedes mantenerte informado sobre los problemas ambientales locales, acceder a datos ambientales y encontrar oportunidades de voluntariado.';
+      document.querySelector('.donate-button').textContent = 'Donar ahora';
+      document.querySelector('.hyperlink-button').textContent = 'Agregar a Discord';
+      document.querySelector('.footer h3').textContent = 'Información de contacto';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = 'Email: info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(2)').textContent = 'Teléfono: +1 123-456-7890';
+      document.querySelector('.contact-info p:nth-child(3)').textContent = 'Dirección: 123 Green Street, Earthville, USA';
+    }
+    
+    // Chinese
+    if (language === 'zh') {
+      document.getElementById('navbarNav').classList.add('rtl');
+      document.body.classList.add('rtl');
+      document.querySelector('h1.display-4').textContent = '在 Discord 中构建关注环境的社区';
+      document.querySelector('p.lead').textContent = 'Earth Bot 是一个信息机器人，赋予 Discord 社区采取行动，迈向可持续未来。通过 Earth Bot，您可以了解当地的环境问题，访问环境数据，并找到志愿者机会。';
+      document.querySelector('.donate-button').textContent = '立即捐赠';
+      document.querySelector('.hyperlink-button').textContent = '添加到 Discord';
+      document.querySelector('.footer h3').textContent = '联系信息';
+      document.querySelector('.contact-info p:nth-child(1)').textContent = '邮箱：info@earthbot.com';
+      document.querySelector('.contact-info p:nth-child(2)').textContent = '电话：+1 123-456-7890';
+      document.querySelector('.contact-info p:nth-child(3)').textContent = '地址：123 Green Street, Earthville, USA';
+    }
+  }
+</script>
 
 <style>
   .navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -161,13 +221,12 @@
     margin-bottom: 5px;
   }
   
-  
   .navbar-nav .nav-link {
     border-radius: 20px;
     margin-right: 10px;
     padding: 10px 20px;
   }
-  
+
   .navbar-nav .nav-link.btn-primary {
     background-color: rgb(55,142,255);
     border-color: rgb(55,142,255);
@@ -175,20 +234,28 @@
   }
   
   .navbar-nav .nav-link.btn-primary:hover {
-    background-color: blue;
-    border-color: blue;
+    background-color: #00bfff;
+    border-color: #00bfff;
   }
 
   .navbar-brand {
     font-weight: bold;
     font-size: 30px;
   }
-
-  body {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/7faa23115720621.6053991a2a4a2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  
+  .dropdown-menu {
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  
+  .dropdown-item {
+    color: #000;
+  }
 </style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
